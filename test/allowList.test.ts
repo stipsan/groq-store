@@ -17,6 +17,6 @@ describe('allowList', () => {
 
   test('only allow product documents in store', async () => {
     expect(await store.query(groq`count(*[_type == "vendor"])`)).toEqual(0)
-    expect(await store.query(groq`count(*[_type == "product"])`)).toEqual(10)
+    expect(await store.query(groq`count(*[_type == "product"])`)).toEqual(5)
   })
 })

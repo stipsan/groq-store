@@ -8,6 +8,7 @@ export interface Config {
   documentLimit?: number
   overlayDrafts?: boolean
   subscriptionThrottleMs?: number
+  allowTypes?: string[]
 }
 
 export interface Subscription {
